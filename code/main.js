@@ -25,8 +25,8 @@ var bookTable = {
         },
     },
     'Mathematics': {
-        'TitleOnMath': {
-            'Author': '',
+        'BookTitleHere': {
+            'Author': 'AuthorNameHere',
             'Link': '',
         },
     }

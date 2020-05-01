@@ -3,17 +3,25 @@ const buyTitle = 'Purchase';
 var tempTable = [];
 var bookTable = {
     'Physics': {
-        'Title': {
-            'Author': 'Richard Feynamn',
-            'Link': 'https://www.google.com',
+        'The Feynman Lectures on Physics, Vol. I': {
+            'Author': 'Richard P Feynman',
+            'Link': 'https://www.bookdepository.com/Feynman-Lectures-on-Physics-Vol-I-Richard-P-Feynman/9780465024933?ref=grid-view&qid=1588332246168&sr=1-6',
         },
-        'Title2': {
+        'The Feynman Lectures on Physics, Vol. II': {
+            'Author': 'Richard P Feynman',
+            'Link': 'https://www.bookdepository.com/Feynman-Lectures-on-Physics-Vol-II-Richard-P-Feynman/9780465024940?ref=grid-view&qid=1588332246168&sr=1-9',
+        },
+        'The Feynman Lectures on Physics, Vol. III': {
+            'Author': 'Richard P Feynman',
+            'Link': 'https://www.bookdepository.com/Feynman-Lectures-on-Physics-Vol-III-Richard-P-Feynman/9780465025015?ref=grid-view&qid=1588332246168&sr=1-7',
+        },
+        'Cosmos': {
             'Author': 'Carl Sagan',
-            'Link': 'https://www.facebook.com',
+            'Link': 'https://www.bookdepository.com/Cosmos-Carl-Sagan/9780345539434?ref=grid-view&qid=1588332421972&sr=1-7',
         },
-        'Title3': {
-            'Author': 'Richard Feynamn',
-            'Link': 'https://www.facebook.com',
+        'Exercises for the Feynman Lectures on Physics': {
+            'Author': 'Richard P Feynman',
+            'Link': 'https://www.bookdepository.com/Exercises-for-Feynman-Lectures-on-Physics-Richard-P-Feynman/9780465060719?ref=grid-view&qid=1588332383756&sr=1-11',
         },
     },
     'Mathematics': {

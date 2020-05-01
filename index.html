@@ -17,7 +17,6 @@
     <meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
     <meta name="theme-color" content="#563d7c">
 
-
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -43,51 +42,81 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
-
     <main role="main" class="container">
 
-        <template id="header_data"> 
-        <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-primary rounded shadow-sm w-75 mx-auto">
-            <img class="mr-3" src="./assets/logo-max.png" alt="" width="48" height="48">
-            <div class="lh-100">
-                <h6 class="mb-0 text-white lh-100">BooksOnScience</h6>
-                <small>A library for you !</small>
+        <template id="header_data">
+            <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-primary rounded shadow-sm w-75 mx-auto">
+                <img class="mr-3" src="./assets/logo-max.png" alt="" width="48" height="48">
+                <div class="lh-100">
+                    <h6 class="mb-0 text-white lh-100">BooksOnScience</h6>
+                    <small>A library for you !</small>
+                </div>
             </div>
-        </div>
-    </template>
 
-        <template id="section_data"> 
-        <div class="my-3 p-5 bg-white rounded shadow-sm w-75 mx-auto" id="content_holder">
-            <h6 class="border-bottom border-gray pb-2 mb-0" id ="category_name">Category</h6>
-            <template id="book_data">
-            <div class="media text-muted pt-3">
-                <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32"><title>Placeholder</title><rect width="100%" height="100%" fill="#007bff"/><text x="50%" y="50%" fill="#007bff" dy=".3em"></text></svg>
-                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <div class="d-flex justify-content-between align-items-center w-100">
-                        <strong class="text-gray-dark" id="book_title">Book Title</strong>
-                        <div>
-                            <a href="#" id ="book_link">Purchase</a>
-                        </div>
-                        
-                    </div>
-                    <span class="d-block" id="book_author">Author</span>
+            <div class="d-flex  justify-content-center p-3 my-3 text-white-50 bg-white rounded shadow-sm w-75 mx-auto">
+                <div style="padding-left: 1%;padding-right: 1%;">
+                    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#EF476F" />
+                        <text x="50%" y="50%" fill="#EF476F" dy=".3em"></text>
+                    </svg>
+                    <strong class="text-primary" style=" position: relative;top: 5%;right: 5%;">1-2 Stars</strong>
+                </div>
+
+                <div style="padding-left: 1%;padding-right: 1%;">
+                    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#FFD166" />
+                        <text x="50%" y="50%" fill="#FFD166" dy=".3em"></text>
+                    </svg>
+                    <strong class="text-primary" style=" position: relative;top: 5%;right: 5%;">3 Stars</strong>
+                </div>
+
+                <div style="padding-left: 1%;padding-right: 1%;">
+                    <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#06D6A0" />
+                        <text x="50%" y="50%" fill="#06D6A0" dy=".3em"></text>
+                    </svg>
+                    <strong class="text-primary" style=" position: relative;top: 5%;right: 5%;">4-5 Stars</strong>
                 </div>
             </div>
         </template>
+
+        <template id="section_data">
+            <div class="my-3 p-5 bg-white rounded shadow-sm w-75 mx-auto" id="content_holder">
+                <h6 class="border-bottom border-gray pb-2 mb-0" id="category_name">Category</h6>
+                <template id="book_data">
+                    <div class="media text-muted pt-3">
+                        <svg class="bd-placeholder-img mr-2 rounded" width="32" height="32" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 32x32">
+                            <title>Placeholder</title>
+                            <rect id = "rect_draw" width="100%" height="100%" fill="#007bff" />
+                            <text id = "text_draw" x="50%" y="50%" fill="#007bff" dy=".3em"></text>
+                        </svg>
+                        <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <strong class="text-gray-dark" id="book_title">Book Title</strong>
+                                <div>
+                                    <a href="#" id="book_link">Purchase</a>
+                                </div>
+
+                            </div>
+                            <span class="d-block" id="book_author">Author</span>
+                        </div>
+                    </div>
+                </template>
         </small>
         </div>
         </template>
 
         <template id="credits_data">
-        <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-primary rounded shadow-sm w-75 mx-auto">
-            <div class="lh-100">
-                <div class="credits_tab">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-primary rounded shadow-sm w-75 mx-auto">
+                <div class="lh-100">
+                    <div class="credits_tab">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+                </div>
             </div>
-        </div>
-    </template>
+        </template>
     </main>
-
 
     <script src="./code/main.js"></script>
 </body>
